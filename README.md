@@ -6,8 +6,28 @@ This is a ruby on rails --api project built with rails 5, postgresql, elasticsea
 
 Following TDD practice, designed with few useful patterns, styled with rubocop style guide, documented with yard convention, lines of code analysis, 97% tests coverage and properly error handled rails project could be very useful to assess one's knowledge in building rails api projects.
 
-## Usage
+## Submission
 
+Push source code to any Git online repository and share the link
+
+    https://github.com/beck03076/happy_shop
+    
+Write an API documentation for these endpoints[Awesome rspec_api_documentation is used where you can write your acceptance test and api docs together in one go]
+ 
+    https://peaceful-escarpment-30781.herokuapp.com/api/docs
+
+Deploy the API application and share the URL
+
+    https://peaceful-escarpment-30781.herokuapp.com/api/v1/products.json
+
+## Architecture
+
+- The appplication is properly namespaced with api/v1/public modules considering versioning in the future
+- The products are indexed by elasticsearch for the purposes of filtering and sorting. [Bonus: Text search on product name and category is also enabled, can be queried with 'query=<<product_name||category_name>>'
+- The application is deployed on heroku with puma being the app server, bonsai managing the elasticsearch and redistogo for redis database
+- Whenever a product is created/updated/deleted an IndexJob background job is submitted to update the products elasticsearch index and while retrieving the product, api/v1/product_serializer is used to serialize the results
+- Price and SalePrice are handled by the Money gem and a separate MoneyFormatter value object is in place to handle them
+- NoProduct null object pattern is well in place for non existing products for a smoother testing experience and a consistent behaviour for the consumer of the api
 
 ## How to run the test suite
 
