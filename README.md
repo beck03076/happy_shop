@@ -29,6 +29,15 @@ Deploy the API application and share the URL
 - Price and SalePrice are handled by the Money gem and a separate MoneyFormatter value object is in place to handle them
 - NoProduct null object pattern is well in place for non existing products for a smoother testing experience and a consistent behaviour for the consumer of the api
 
+## Important Endpoints
+
+- Total Products Count - https://peaceful-escarpment-30781.herokuapp.com/api/v1/products_count.json
+- All Products - https://peaceful-escarpment-30781.herokuapp.com/api/v1/products
+- Single Product - https://peaceful-escarpment-30781.herokuapp.com/api/v1/products/1004.json
+- Decent Filter - https://peaceful-escarpment-30781.herokuapp.com/api/v1/products?categories=tools&price_lte=19.01
+- Sort Products - https://peaceful-escarpment-30781.herokuapp.com/api/v1/products?price_lte=19.01&sort_by=lowest_price
+- Complex Filter - https://peaceful-escarpment-30781.herokuapp.com/api/v1/products?categories=tools,brushes&price_lte=19.01&sort_by=lowest_price&sale_price_gte=18
+
 ## How to run the test suite
 
 Use the following commands to run the test suites
