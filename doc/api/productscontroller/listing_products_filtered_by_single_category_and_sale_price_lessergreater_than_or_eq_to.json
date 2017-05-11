@@ -39,17 +39,17 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 295,\n    \"name\": \"Output Bracket\",\n    \"category\": \"makeup\",\n    \"price\": \"19.66 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 295,\n    \"name\": \"Auto System\",\n    \"category\": \"makeup\",\n    \"price\": \"19.48 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"8afdc79c20693c6e55acd1d43ede16d9\"",
+        "ETag": "W/\"ab2d066f1d4feea585587ce95bd18a16\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "b65f5160-7705-4e1a-8be8-6074dce6005d",
-        "X-Runtime": "0.009945",
-        "Content-Length": "203"
+        "X-Request-Id": "93c4ccad-2cd5-44c9-bae3-18d19f5d2248",
+        "X-Runtime": "0.009927",
+        "Content-Length": "199"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

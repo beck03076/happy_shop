@@ -25,17 +25,17 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Audible Air Filter\",\n  \"category\": \"default\",\n  \"price\": \"19.05 USD\",\n  \"sale_price\": \"18.86 USD\",\n  \"under_sale\": true,\n  \"sold_out\": true,\n  \"created_at\": \"less than a minute\",\n  \"updated_at\": \"less than a minute\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Air Amplifier\",\n  \"category\": \"default\",\n  \"price\": \"19.24 USD\",\n  \"sale_price\": \"18.16 USD\",\n  \"under_sale\": true,\n  \"sold_out\": false,\n  \"created_at\": \"less than a minute\",\n  \"updated_at\": \"less than a minute\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"043b22381cf443de185606ebb7c862c5\"",
+        "ETag": "W/\"a14fe43a210860f7b121199d843de101\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "b38e87d9-f509-45d8-9e01-9f53eba37ae9",
-        "X-Runtime": "0.024184",
-        "Content-Length": "204"
+        "X-Request-Id": "8435f28f-6519-4308-8231-befc1b9693aa",
+        "X-Runtime": "0.037543",
+        "Content-Length": "200"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
