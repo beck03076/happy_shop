@@ -1,0 +1,44 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products",
+  "explanation": "This fetches all the products in the happy shop with the right attributes",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 73,\n    \"name\": \"Remote Tag Component\",\n    \"category\": \"default\",\n    \"price\": \"19.46 USD\",\n    \"sale_price\": \"18.55 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 79,\n    \"name\": \"Portable Adapter\",\n    \"category\": \"makeup\",\n    \"price\": \"19.26 USD\",\n    \"sale_price\": \"18.29 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 84,\n    \"name\": \"Tag Compressor\",\n    \"category\": \"tools\",\n    \"price\": \"19.16 USD\",\n    \"sale_price\": \"18.05 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 89,\n    \"name\": \"Performance Bracket\",\n    \"category\": \"default\",\n    \"price\": \"1.00 USD\",\n    \"sale_price\": \"18.12 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 92,\n    \"name\": \"Electric Adapter\",\n    \"category\": \"default\",\n    \"price\": \"19.85 USD\",\n    \"sale_price\": \"999.00 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 70,\n    \"name\": \"Input Adapter\",\n    \"category\": \"default\",\n    \"price\": \"19.49 USD\",\n    \"sale_price\": \"18.62 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 78,\n    \"name\": \"Remote Input Transmitter\",\n    \"category\": \"makeup\",\n    \"price\": \"19.60 USD\",\n    \"sale_price\": \"18.81 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 82,\n    \"name\": \"Portable Transmitter\",\n    \"category\": \"tools\",\n    \"price\": \"19.24 USD\",\n    \"sale_price\": \"18.29 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 87,\n    \"name\": \"Output Input System\",\n    \"category\": \"makeup\",\n    \"price\": \"18.99 USD\",\n    \"sale_price\": \"18.68 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 88,\n    \"name\": \"Audible Receiver\",\n    \"category\": \"makeup\",\n    \"price\": \"19.60 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 80,\n    \"name\": \"Performance Side Kit\",\n    \"category\": \"tools\",\n    \"price\": \"19.27 USD\",\n    \"sale_price\": \"18.96 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 85,\n    \"name\": \"Portable Air Case\",\n    \"category\": \"makeup\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.25 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 71,\n    \"name\": \"Power Remote Viewer\",\n    \"category\": \"default\",\n    \"price\": \"19.27 USD\",\n    \"sale_price\": \"18.88 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 72,\n    \"name\": \"Audible Transmitter\",\n    \"category\": \"default\",\n    \"price\": \"19.35 USD\",\n    \"sale_price\": \"18.58 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 77,\n    \"name\": \"HD GPS Compressor\",\n    \"category\": \"makeup\",\n    \"price\": \"19.30 USD\",\n    \"sale_price\": \"18.72 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 81,\n    \"name\": \"Output Controller\",\n    \"category\": \"tools\",\n    \"price\": \"19.29 USD\",\n    \"sale_price\": \"18.92 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 86,\n    \"name\": \"Digital Filter\",\n    \"category\": \"tools\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.78 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 74,\n    \"name\": \"Air Bridge\",\n    \"category\": \"default\",\n    \"price\": \"19.85 USD\",\n    \"sale_price\": \"18.81 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 75,\n    \"name\": \"Electric Transmitter\",\n    \"category\": \"makeup\",\n    \"price\": \"19.92 USD\",\n    \"sale_price\": \"18.53 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 76,\n    \"name\": \"Disc Case\",\n    \"category\": \"makeup\",\n    \"price\": \"19.18 USD\",\n    \"sale_price\": \"18.75 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 83,\n    \"name\": \"Electric Video Controller\",\n    \"category\": \"tools\",\n    \"price\": \"19.70 USD\",\n    \"sale_price\": \"18.89 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 90,\n    \"name\": \"Audible Input Tuner\",\n    \"category\": \"default\",\n    \"price\": \"19.71 USD\",\n    \"sale_price\": \"1.00 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 91,\n    \"name\": \"happy shop best product\",\n    \"category\": \"default\",\n    \"price\": \"999.00 USD\",\n    \"sale_price\": \"18.68 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b2bec0d3a83523bde06908d7c92fe822\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "7589c900-2d82-4e44-936e-b660c8c98e67",
+        "X-Runtime": "0.024666",
+        "Content-Length": "4729"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

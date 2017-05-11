@@ -1,0 +1,44 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products/:id.json",
+  "description": "Trying to fetch a non existent product",
+  "explanation": "This fetches a default no product from the system",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products/10000000.json",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": null,\n  \"name\": \"This product does not exist\",\n  \"category\": \"N/A\",\n  \"price\": \"N/A\",\n  \"sale_price\": \"N/A\",\n  \"under_sale\": false,\n  \"sold_out\": false,\n  \"created_at\": null,\n  \"updated_at\": null\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"c4f2ae95851d3fa6f5523797e4b93181\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "3e04ad50-6096-4234-88d3-0dd8e944653e",
+        "X-Runtime": "0.011574",
+        "Content-Length": "170"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

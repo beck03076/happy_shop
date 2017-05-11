@@ -1,0 +1,58 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products as paginated",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "page",
+      "description": "Page number of the paginated results"
+    },
+    {
+      "name": "per_page",
+      "description": "Number of results per page"
+    },
+    {
+      "name": "sort_by",
+      "description": "To be sorted by attribute and direction"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?page=1&per_page=1&sort_by=highest_sale_price",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "page": "1",
+        "per_page": "1",
+        "sort_by": "highest_sale_price"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 414,\n    \"name\": \"Air Component\",\n    \"category\": \"default\",\n    \"price\": \"19.36 USD\",\n    \"sale_price\": \"999.00 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"34d45ef1b7b8ecefb3c14bbb747c4d3f\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "af4e3c84-6bd9-4b90-9a03-3e4b79fecff0",
+        "X-Runtime": "0.010071",
+        "Content-Length": "205"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

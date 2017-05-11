@@ -1,0 +1,43 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products.pdf",
+  "description": "raises an error for non json requests",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products.pdf",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 406,
+      "response_status_text": "Not Acceptable",
+      "response_body": "{\n  \"message\": \"The request must be json format\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "9219fa16-8046-41ec-a213-fb2289cc035d",
+        "X-Runtime": "0.001639",
+        "Content-Length": "45"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

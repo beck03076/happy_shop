@@ -1,0 +1,47 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "raises an error for unsupported parameters",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "brand",
+      "description": "An unsupported parameter by the api"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?brand=sony",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "brand": "sony"
+      },
+      "request_content_type": null,
+      "response_status": 400,
+      "response_status_text": "Bad Request",
+      "response_body": "{\n  \"message\": \"These params are not supported\",\n  \"unsupported_parameters\": [\n    \"brand\"\n  ]\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "ba2f9784-1e22-4b15-82a3-e011afbaa8a3",
+        "X-Runtime": "0.002227",
+        "Content-Length": "79"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

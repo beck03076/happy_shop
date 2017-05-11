@@ -1,0 +1,48 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products sorted by highest price",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "sort_by",
+      "description": "To be sorted by attribute and direction"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?sort_by=highest_price",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "sort_by": "highest_price"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 367,\n    \"name\": \"happy shop best product\",\n    \"category\": \"default\",\n    \"price\": \"999.00 USD\",\n    \"sale_price\": \"18.33 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 354,\n    \"name\": \"Tag Kit\",\n    \"category\": \"makeup\",\n    \"price\": \"19.98 USD\",\n    \"sale_price\": \"18.79 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 353,\n    \"name\": \"Air Controller\",\n    \"category\": \"makeup\",\n    \"price\": \"19.87 USD\",\n    \"sale_price\": \"18.71 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 355,\n    \"name\": \"Power Digital Bridge\",\n    \"category\": \"makeup\",\n    \"price\": \"19.77 USD\",\n    \"sale_price\": \"18.14 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 359,\n    \"name\": \"Output Compressor\",\n    \"category\": \"tools\",\n    \"price\": \"19.71 USD\",\n    \"sale_price\": \"18.87 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 350,\n    \"name\": \"Tag Filter\",\n    \"category\": \"default\",\n    \"price\": \"19.67 USD\",\n    \"sale_price\": \"18.65 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 347,\n    \"name\": \"Video Power Tuner\",\n    \"category\": \"default\",\n    \"price\": \"19.67 USD\",\n    \"sale_price\": \"18.20 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 358,\n    \"name\": \"Tag Bracket\",\n    \"category\": \"tools\",\n    \"price\": \"19.66 USD\",\n    \"sale_price\": \"18.94 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 351,\n    \"name\": \"Auto Side Component\",\n    \"category\": \"makeup\",\n    \"price\": \"19.64 USD\",\n    \"sale_price\": \"18.45 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 368,\n    \"name\": \"Video Power Case\",\n    \"category\": \"default\",\n    \"price\": \"19.63 USD\",\n    \"sale_price\": \"999.00 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 349,\n    \"name\": \"Remote Kit\",\n    \"category\": \"default\",\n    \"price\": \"19.62 USD\",\n    \"sale_price\": \"18.89 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 360,\n    \"name\": \"Electric System\",\n    \"category\": \"tools\",\n    \"price\": \"19.55 USD\",\n    \"sale_price\": \"18.46 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 356,\n    \"name\": \"Digital Component\",\n    \"category\": \"tools\",\n    \"price\": \"19.52 USD\",\n    \"sale_price\": \"18.55 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 346,\n    \"name\": \"Digital Mount\",\n    \"category\": \"default\",\n    \"price\": \"19.51 USD\",\n    \"sale_price\": \"18.26 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 366,\n    \"name\": \"Tag Output Case\",\n    \"category\": \"default\",\n    \"price\": \"19.41 USD\",\n    \"sale_price\": \"1.00 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 352,\n    \"name\": \"Electric Adapter\",\n    \"category\": \"makeup\",\n    \"price\": \"19.20 USD\",\n    \"sale_price\": \"18.21 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 357,\n    \"name\": \"Performance Digital Case\",\n    \"category\": \"tools\",\n    \"price\": \"19.17 USD\",\n    \"sale_price\": \"18.99 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 348,\n    \"name\": \"Tag Input Receiver\",\n    \"category\": \"default\",\n    \"price\": \"19.04 USD\",\n    \"sale_price\": \"18.17 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 364,\n    \"name\": \"Remote Kit\",\n    \"category\": \"makeup\",\n    \"price\": \"19.02 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 363,\n    \"name\": \"Direct Case\",\n    \"category\": \"makeup\",\n    \"price\": \"18.99 USD\",\n    \"sale_price\": \"18.18 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 361,\n    \"name\": \"Power Auto Receiver\",\n    \"category\": \"makeup\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.15 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 362,\n    \"name\": \"Tag Digital Compressor\",\n    \"category\": \"tools\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.27 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 365,\n    \"name\": \"Electric Power Controller\",\n    \"category\": \"default\",\n    \"price\": \"1.00 USD\",\n    \"sale_price\": \"18.13 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"6d0621e057423afe3371432318389e8c\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "78656071-2927-48dc-8b21-cf7ecd67cb7d",
+        "X-Runtime": "0.025358",
+        "Content-Length": "4719"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

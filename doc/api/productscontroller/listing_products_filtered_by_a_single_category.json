@@ -1,0 +1,48 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products filtered by a single category",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "categories",
+      "description": "List of categories to be filtered by"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?categories=makeup",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "categories": "makeup"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 190,\n    \"name\": \"Power Case\",\n    \"category\": \"makeup\",\n    \"price\": \"19.97 USD\",\n    \"sale_price\": \"18.61 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 191,\n    \"name\": \"Video Transmitter\",\n    \"category\": \"makeup\",\n    \"price\": \"19.92 USD\",\n    \"sale_price\": \"18.42 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 200,\n    \"name\": \"Gel Bridge\",\n    \"category\": \"makeup\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.47 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 202,\n    \"name\": \"GPS Disc Compressor\",\n    \"category\": \"makeup\",\n    \"price\": \"18.99 USD\",\n    \"sale_price\": \"18.43 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 203,\n    \"name\": \"Video HD Bracket\",\n    \"category\": \"makeup\",\n    \"price\": \"19.02 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 192,\n    \"name\": \"Output Receiver\",\n    \"category\": \"makeup\",\n    \"price\": \"19.27 USD\",\n    \"sale_price\": \"18.51 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 193,\n    \"name\": \"Output Filter\",\n    \"category\": \"makeup\",\n    \"price\": \"19.97 USD\",\n    \"sale_price\": \"18.63 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 194,\n    \"name\": \"Auto Bracket\",\n    \"category\": \"makeup\",\n    \"price\": \"19.92 USD\",\n    \"sale_price\": \"18.10 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"d37bf098d20387121f936483d579380b\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "3dfde084-4699-4686-8150-e4a7759113da",
+        "X-Runtime": "0.017454",
+        "Content-Length": "1625"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

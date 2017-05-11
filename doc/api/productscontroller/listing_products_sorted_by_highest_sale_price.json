@@ -1,0 +1,48 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products sorted by highest sale price",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "sort_by",
+      "description": "To be sorted by attribute and direction"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?sort_by=highest_sale_price",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "sort_by": "highest_sale_price"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 391,\n    \"name\": \"Performance Video Receiver\",\n    \"category\": \"default\",\n    \"price\": \"19.78 USD\",\n    \"sale_price\": \"999.00 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 383,\n    \"name\": \"Audible Tag Tuner\",\n    \"category\": \"tools\",\n    \"price\": \"19.15 USD\",\n    \"sale_price\": \"18.94 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 373,\n    \"name\": \"Gel GPS Bracket\",\n    \"category\": \"default\",\n    \"price\": \"19.36 USD\",\n    \"sale_price\": \"18.88 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 384,\n    \"name\": \"Direct Disc Tuner\",\n    \"category\": \"makeup\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.88 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 388,\n    \"name\": \"Disc Video Mount\",\n    \"category\": \"default\",\n    \"price\": \"1.00 USD\",\n    \"sale_price\": \"18.78 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 371,\n    \"name\": \"Gel Auto Amplifier\",\n    \"category\": \"default\",\n    \"price\": \"19.41 USD\",\n    \"sale_price\": \"18.66 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 382,\n    \"name\": \"Digital Kit\",\n    \"category\": \"tools\",\n    \"price\": \"19.80 USD\",\n    \"sale_price\": \"18.66 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 372,\n    \"name\": \"Electric Kit\",\n    \"category\": \"default\",\n    \"price\": \"19.15 USD\",\n    \"sale_price\": \"18.64 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 379,\n    \"name\": \"Side Input Mount\",\n    \"category\": \"tools\",\n    \"price\": \"19.95 USD\",\n    \"sale_price\": \"18.63 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 374,\n    \"name\": \"Direct Bridge\",\n    \"category\": \"makeup\",\n    \"price\": \"19.77 USD\",\n    \"sale_price\": \"18.54 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 385,\n    \"name\": \"Audible Video Transmitter\",\n    \"category\": \"tools\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.45 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 369,\n    \"name\": \"Tag Bracket\",\n    \"category\": \"default\",\n    \"price\": \"19.38 USD\",\n    \"sale_price\": \"18.38 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 390,\n    \"name\": \"happy shop best product\",\n    \"category\": \"default\",\n    \"price\": \"999.00 USD\",\n    \"sale_price\": \"18.31 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 380,\n    \"name\": \"Disc Mount\",\n    \"category\": \"tools\",\n    \"price\": \"19.90 USD\",\n    \"sale_price\": \"18.27 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 377,\n    \"name\": \"Direct Mount\",\n    \"category\": \"makeup\",\n    \"price\": \"19.10 USD\",\n    \"sale_price\": \"18.22 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 370,\n    \"name\": \"Input Remote Receiver\",\n    \"category\": \"default\",\n    \"price\": \"19.12 USD\",\n    \"sale_price\": \"18.20 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 378,\n    \"name\": \"Direct Video Case\",\n    \"category\": \"makeup\",\n    \"price\": \"19.74 USD\",\n    \"sale_price\": \"18.17 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 375,\n    \"name\": \"GPS Air Compressor\",\n    \"category\": \"makeup\",\n    \"price\": \"19.28 USD\",\n    \"sale_price\": \"18.16 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 376,\n    \"name\": \"Output Kit\",\n    \"category\": \"makeup\",\n    \"price\": \"19.63 USD\",\n    \"sale_price\": \"18.12 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 386,\n    \"name\": \"GPS Auto System\",\n    \"category\": \"makeup\",\n    \"price\": \"18.99 USD\",\n    \"sale_price\": \"18.05 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 381,\n    \"name\": \"Direct Adapter\",\n    \"category\": \"tools\",\n    \"price\": \"19.98 USD\",\n    \"sale_price\": \"18.05 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 387,\n    \"name\": \"Tag Gel Receiver\",\n    \"category\": \"makeup\",\n    \"price\": \"19.41 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 389,\n    \"name\": \"Audible Controller\",\n    \"category\": \"default\",\n    \"price\": \"19.91 USD\",\n    \"sale_price\": \"1.00 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"07531055f2b795ad82afc299063f5eb7\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "9a8dd3c1-3315-427f-bb15-7823828e2dc9",
+        "X-Runtime": "0.025117",
+        "Content-Length": "4721"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "resources": [
+    {
+      "name": "ProductsController",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Getting the total product count in the system",
+          "link": "productscontroller/getting_the_total_product_count_in_the_system.json",
+          "groups": "all",
+          "route": "/api/v1/products_count.json",
+          "method": "get"
+        },
+        {
+          "description": "Listing a single product",
+          "link": "productscontroller/listing_a_single_product.json",
+          "groups": "all",
+          "route": "/api/v1/products/:id.json",
+          "method": "get"
+        },
+        {
+          "description": "Listing products",
+          "link": "productscontroller/listing_products.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products as paginated",
+          "link": "productscontroller/listing_products_as_paginated.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products by search on product name and category",
+          "link": "productscontroller/listing_products_by_search_on_product_name_and_category.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products filtered by a single category",
+          "link": "productscontroller/listing_products_filtered_by_a_single_category.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products filtered by multiple categories",
+          "link": "productscontroller/listing_products_filtered_by_multiple_categories.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products filtered by multiple categories and price lesser than or eq to",
+          "link": "productscontroller/listing_products_filtered_by_multiple_categories_and_price_lesser_than_or_eq_to.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products filtered by multiple categories and price lesser/greater than or eq to",
+          "link": "productscontroller/listing_products_filtered_by_multiple_categories_and_price_lessergreater_than_or_eq_to.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products filtered by single category and sale price lesser/greater than or eq to",
+          "link": "productscontroller/listing_products_filtered_by_single_category_and_sale_price_lessergreater_than_or_eq_to.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products in combinations of all filters and sort",
+          "link": "productscontroller/listing_products_in_combinations_of_all_filters_and_sort.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products sorted by highest price",
+          "link": "productscontroller/listing_products_sorted_by_highest_price.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products sorted by highest sale price",
+          "link": "productscontroller/listing_products_sorted_by_highest_sale_price.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products sorted by lowest price",
+          "link": "productscontroller/listing_products_sorted_by_lowest_price.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Listing products sorted by lowest sale price",
+          "link": "productscontroller/listing_products_sorted_by_lowest_sale_price.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
+          "description": "Trying to fetch a non existent product",
+          "link": "productscontroller/trying_to_fetch_a_non_existent_product.json",
+          "groups": "all",
+          "route": "/api/v1/products/:id.json",
+          "method": "get"
+        },
+        {
+          "description": "raises an error for non GET requests",
+          "link": "productscontroller/raises_an_error_for_non_get_requests.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "post"
+        },
+        {
+          "description": "raises an error for non json requests",
+          "link": "productscontroller/raises_an_error_for_non_json_requests.json",
+          "groups": "all",
+          "route": "/api/v1/products.pdf",
+          "method": "get"
+        },
+        {
+          "description": "raises an error for unsupported parameters",
+          "link": "productscontroller/raises_an_error_for_unsupported_parameters.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

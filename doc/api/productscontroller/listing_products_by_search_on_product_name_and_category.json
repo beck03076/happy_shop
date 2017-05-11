@@ -1,0 +1,48 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products by search on product name and category",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "query",
+      "description": "Query to search on product name or category"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?query=happy+shop+best+product",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "query": "happy shop best product"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 183,\n    \"name\": \"happy shop best product\",\n    \"category\": \"default\",\n    \"price\": \"999.00 USD\",\n    \"sale_price\": \"18.94 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"dfe874923e6ec1c6cde4a4bf3e59f55a\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "c02c0b1a-fcc0-497e-aebd-0c0ee26cdac8",
+        "X-Runtime": "0.009671",
+        "Content-Length": "214"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

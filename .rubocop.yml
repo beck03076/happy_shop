@@ -1,0 +1,14 @@
+AllCops:
+  TargetRubyVersion: 2.2
+    # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
+    # to ignore them, so only the ones explicitly set in this file are enabled.
+  DisabledByDefault: false
+  Exclude:
+    - '**/templates/**/*'
+    - '**/vendor/**/*'
+    - '**/config/**/*'
+    - '**/db/**/*'
+    - '**/lib/tasks/**/*'
+    - '**/script/**/*'
+    - '**/features/support/env.rb'
+    - '**/Guardfile'

@@ -1,0 +1,58 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products filtered by multiple categories and price lesser/greater than or eq to",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "categories",
+      "description": "List of categories to be filtered by as comma separated values"
+    },
+    {
+      "name": "price_lte",
+      "description": "Price lesser than or equal to"
+    },
+    {
+      "name": "price_gte",
+      "description": "Price greater than or equal to"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?categories=makeup%2Ctools&price_lte=18.99&price_gte=18.99",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "categories": "makeup,tools",
+        "price_lte": "18.99",
+        "price_gte": "18.99"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 271,\n    \"name\": \"Input Amplifier\",\n    \"category\": \"makeup\",\n    \"price\": \"18.99 USD\",\n    \"sale_price\": \"18.28 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b7ea1aef4ee4a5bd4cb06db16d89c0a0\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "73ed15e7-a72c-4514-8da5-db54403de6a0",
+        "X-Runtime": "0.010274",
+        "Content-Length": "205"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

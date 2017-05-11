@@ -1,0 +1,53 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products filtered by multiple categories and price lesser than or eq to",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "categories",
+      "description": "List of categories to be filtered by as comma separated values"
+    },
+    {
+      "name": "price_lte",
+      "description": "Price lesser than or equal to"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?categories=makeup%2Ctools&price_lte=19",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "categories": "makeup,tools",
+        "price_lte": "19"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 248,\n    \"name\": \"Tag Direct Component\",\n    \"category\": \"makeup\",\n    \"price\": \"18.99 USD\",\n    \"sale_price\": \"18.12 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 246,\n    \"name\": \"HD Tuner\",\n    \"category\": \"makeup\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.22 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 247,\n    \"name\": \"Power Auto Bracket\",\n    \"category\": \"tools\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.70 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"50c08a903adecd2b4f4ff93842922c59\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "8fce3d6c-60cc-4ba1-853e-b60cce6d8034",
+        "X-Runtime": "0.010876",
+        "Content-Length": "611"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

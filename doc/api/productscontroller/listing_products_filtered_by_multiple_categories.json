@@ -1,0 +1,48 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products filtered by multiple categories",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "categories",
+      "description": "List of categories to be filtered by as comma separated values"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?categories=makeup%2Ctools",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "categories": "makeup,tools"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 222,\n    \"name\": \"Power Input Amplifier\",\n    \"category\": \"tools\",\n    \"price\": \"19.17 USD\",\n    \"sale_price\": \"18.79 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 214,\n    \"name\": \"Tag Input Kit\",\n    \"category\": \"makeup\",\n    \"price\": \"19.59 USD\",\n    \"sale_price\": \"18.20 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 220,\n    \"name\": \"Disc Amplifier\",\n    \"category\": \"tools\",\n    \"price\": \"19.40 USD\",\n    \"sale_price\": \"18.00 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 221,\n    \"name\": \"Video Gel Controller\",\n    \"category\": \"tools\",\n    \"price\": \"19.42 USD\",\n    \"sale_price\": \"18.46 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 223,\n    \"name\": \"Power Input Bracket\",\n    \"category\": \"makeup\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.98 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 224,\n    \"name\": \"Gel Mount\",\n    \"category\": \"tools\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.68 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 226,\n    \"name\": \"Video Remote System\",\n    \"category\": \"makeup\",\n    \"price\": \"19.25 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 213,\n    \"name\": \"Input Bridge\",\n    \"category\": \"makeup\",\n    \"price\": \"19.70 USD\",\n    \"sale_price\": \"18.79 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 219,\n    \"name\": \"Remote Viewer\",\n    \"category\": \"tools\",\n    \"price\": \"19.47 USD\",\n    \"sale_price\": \"18.82 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 225,\n    \"name\": \"Auto System\",\n    \"category\": \"makeup\",\n    \"price\": \"18.99 USD\",\n    \"sale_price\": \"18.44 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 216,\n    \"name\": \"HD Amplifier\",\n    \"category\": \"makeup\",\n    \"price\": \"19.51 USD\",\n    \"sale_price\": \"19.00 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 215,\n    \"name\": \"Gel HD Transmitter\",\n    \"category\": \"makeup\",\n    \"price\": \"19.80 USD\",\n    \"sale_price\": \"18.34 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 217,\n    \"name\": \"Power Air Bridge\",\n    \"category\": \"makeup\",\n    \"price\": \"19.95 USD\",\n    \"sale_price\": \"18.91 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 218,\n    \"name\": \"Auto System\",\n    \"category\": \"tools\",\n    \"price\": \"19.34 USD\",\n    \"sale_price\": \"18.70 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"f0f5674fd717a13ce2e0ca0c43936846\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "7785edc7-248b-4853-9d6c-735a87bc9300",
+        "X-Runtime": "0.018723",
+        "Content-Length": "2851"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

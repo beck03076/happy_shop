@@ -1,0 +1,48 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products sorted by lowest sale price",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "sort_by",
+      "description": "To be sorted by attribute and direction"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?sort_by=lowest_sale_price",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "sort_by": "lowest_sale_price"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 343,\n    \"name\": \"HD Bridge\",\n    \"category\": \"default\",\n    \"price\": \"19.22 USD\",\n    \"sale_price\": \"1.00 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 341,\n    \"name\": \"Electric Viewer\",\n    \"category\": \"makeup\",\n    \"price\": \"19.38 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 342,\n    \"name\": \"Power Viewer\",\n    \"category\": \"default\",\n    \"price\": \"1.00 USD\",\n    \"sale_price\": \"18.02 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 327,\n    \"name\": \"Air Digital Mount\",\n    \"category\": \"default\",\n    \"price\": \"19.68 USD\",\n    \"sale_price\": \"18.18 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 332,\n    \"name\": \"GPS Gel Mount\",\n    \"category\": \"makeup\",\n    \"price\": \"19.41 USD\",\n    \"sale_price\": \"18.19 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 337,\n    \"name\": \"Remote Direct Bridge\",\n    \"category\": \"tools\",\n    \"price\": \"19.70 USD\",\n    \"sale_price\": \"18.22 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 329,\n    \"name\": \"Auto Tuner\",\n    \"category\": \"makeup\",\n    \"price\": \"19.58 USD\",\n    \"sale_price\": \"18.26 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 339,\n    \"name\": \"Electric Gel Case\",\n    \"category\": \"tools\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.29 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 331,\n    \"name\": \"Disc Mount\",\n    \"category\": \"makeup\",\n    \"price\": \"19.17 USD\",\n    \"sale_price\": \"18.42 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 323,\n    \"name\": \"Remote Performance Controller\",\n    \"category\": \"default\",\n    \"price\": \"19.45 USD\",\n    \"sale_price\": \"18.52 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 335,\n    \"name\": \"HD Video System\",\n    \"category\": \"tools\",\n    \"price\": \"19.54 USD\",\n    \"sale_price\": \"18.59 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 338,\n    \"name\": \"Remote Component\",\n    \"category\": \"makeup\",\n    \"price\": \"18.00 USD\",\n    \"sale_price\": \"18.59 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 325,\n    \"name\": \"HD Bracket\",\n    \"category\": \"default\",\n    \"price\": \"19.05 USD\",\n    \"sale_price\": \"18.59 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 333,\n    \"name\": \"Disc Receiver\",\n    \"category\": \"tools\",\n    \"price\": \"19.32 USD\",\n    \"sale_price\": \"18.60 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 330,\n    \"name\": \"Digital Compressor\",\n    \"category\": \"makeup\",\n    \"price\": \"19.44 USD\",\n    \"sale_price\": \"18.61 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 334,\n    \"name\": \"Disc Direct Controller\",\n    \"category\": \"tools\",\n    \"price\": \"19.65 USD\",\n    \"sale_price\": \"18.78 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 344,\n    \"name\": \"happy shop best product\",\n    \"category\": \"default\",\n    \"price\": \"999.00 USD\",\n    \"sale_price\": \"18.84 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 336,\n    \"name\": \"HD Tag Adapter\",\n    \"category\": \"tools\",\n    \"price\": \"19.40 USD\",\n    \"sale_price\": \"18.84 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 328,\n    \"name\": \"Digital Amplifier\",\n    \"category\": \"makeup\",\n    \"price\": \"19.73 USD\",\n    \"sale_price\": \"18.84 USD\",\n    \"under_sale\": false,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 326,\n    \"name\": \"Direct Kit\",\n    \"category\": \"default\",\n    \"price\": \"19.20 USD\",\n    \"sale_price\": \"18.84 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 340,\n    \"name\": \"Tag System\",\n    \"category\": \"makeup\",\n    \"price\": \"18.99 USD\",\n    \"sale_price\": \"18.95 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 324,\n    \"name\": \"Audible Portable Viewer\",\n    \"category\": \"default\",\n    \"price\": \"19.86 USD\",\n    \"sale_price\": \"18.99 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  },\n  {\n    \"id\": 345,\n    \"name\": \"Input Side Amplifier\",\n    \"category\": \"default\",\n    \"price\": \"19.44 USD\",\n    \"sale_price\": \"999.00 USD\",\n    \"under_sale\": true,\n    \"sold_out\": false,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"07970638d89b289c9b617c4bde3fab55\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "16b4708b-dcea-4b1f-9fbb-9b2f4fb6fdf2",
+        "X-Runtime": "0.024209",
+        "Content-Length": "4708"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

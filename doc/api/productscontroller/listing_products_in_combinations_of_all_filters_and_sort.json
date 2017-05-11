@@ -1,0 +1,68 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products in combinations of all filters and sort",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "categories",
+      "description": "List of categories to be filtered by as comma separated values"
+    },
+    {
+      "name": "price_gte",
+      "description": "Price greater than or equal to"
+    },
+    {
+      "name": "sort_by",
+      "description": "To be sorted by attribute and direction"
+    },
+    {
+      "name": "page",
+      "description": "Page number of the paginated results"
+    },
+    {
+      "name": "per_page",
+      "description": "Number of results per page"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?categories=makeup%2Ctools&price_gte=18.99&sort_by=highest_sale_price&page=1&per_page=1",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "categories": "makeup,tools",
+        "price_gte": "18.99",
+        "sort_by": "highest_sale_price",
+        "page": "1",
+        "per_page": "1"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 426,\n    \"name\": \"Input Amplifier\",\n    \"category\": \"tools\",\n    \"price\": \"19.29 USD\",\n    \"sale_price\": \"18.95 USD\",\n    \"under_sale\": true,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"3043183d47124abea5ed456d6c69b239\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "d20c5b42-aeff-4c86-b5d8-e489959505bc",
+        "X-Runtime": "0.010028",
+        "Content-Length": "203"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

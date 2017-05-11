@@ -1,0 +1,58 @@
+{
+  "resource": "ProductsController",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing products filtered by single category and sale price lesser/greater than or eq to",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "categories",
+      "description": "List of categories to be filtered by as comma separated values"
+    },
+    {
+      "name": "sale_price_lte",
+      "description": "Sale Price lesser than or equal to"
+    },
+    {
+      "name": "sale_price_gte",
+      "description": "Sale Price greater than or equal to"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products?categories=makeup&sale_price_lte=9.99&sale_price_gte=9.99",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "categories": "makeup",
+        "sale_price_lte": "9.99",
+        "sale_price_gte": "9.99"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 295,\n    \"name\": \"Output Bracket\",\n    \"category\": \"makeup\",\n    \"price\": \"19.66 USD\",\n    \"sale_price\": \"9.99 USD\",\n    \"under_sale\": false,\n    \"sold_out\": true,\n    \"created_at\": \"less than a minute\",\n    \"updated_at\": \"less than a minute\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"8afdc79c20693c6e55acd1d43ede16d9\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "b65f5160-7705-4e1a-8be8-6074dce6005d",
+        "X-Runtime": "0.009945",
+        "Content-Length": "203"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
